@@ -15,14 +15,13 @@
     <title>Тинькофф Образование</title>
   </head>
   <body>
-    <header class="header">
-      <p class="header__text">Линкер Макар 6409</p>
-      <button id="setup-cards" class="header__button" type="button">Инициализировать первоначальные значения</button>
+    <header id="profile-header" class="header">
+      <button id="setup-cards" class="header__button" type="button">Засетапить начальные значения</button>
     </header>
     <div class="block">
       <form id="input-form" class="form">
         <div class="form__input-form">
-          <input data-required="true" data-max-length="300" id="input-name" class="form__input-text" name="name" type="text" placeholder="Имя" required></input>
+          <input data-required="true" data-max-length="300" id="input-name" class="form__input-text" name="name" type="text" placeholder="Название" required></input>
         </div>
         <div class="form__input-form">
           <input data-required="true" data-max-length="300" id="input-link" class="form__input-text" name="link" type="text" placeholder="Ссылка на изображение" required></input>
@@ -37,12 +36,60 @@
           <input data-required="true" data-max-length="300" id="input-provider" class="form__input-text" name="provider" type="provider" placeholder="Поставщик" required></input>
         </div>
         <div class="form__row">
-          <button class="form__create-button" type="button" id="create-card">Добавить</button>
+          <button class="form__create-button" type="button" id="create-card">Создать</button>
         </div>
       </form>
       <div class="form-card">
         <div class="form-card__list_item">
-
+          <div class="form-card__item skeleton form-card__">
+            <div class="form-card__code"></div>
+            <div  class="form-card__row">
+              <div class="form-card__name"></div>
+            </div>
+            <div class="form-card__provider"></div>
+            <div class="form-card__description"></div>
+            <div class="form-card__row">
+              <button class="form-card__delete-button">Удалить</button>
+              <button class="form-card__edit-button">Редактировать</button>
+            </div>
+          </div>
+          <div class="form-card__item skeleton">
+            <div class="form-card__code"></div>
+            <div  class="form-card__row">
+              <div class="form-card__name"></div>
+            </div>
+            <div class="form-card__provider"></div>
+            <div class="form-card__description"></div>
+            <div class="form-card__row">
+              <button class="form-card__delete-button">Удалить</button>
+              <button class="form-card__edit-button">Редактировать</button>
+            </div>
+          </div>
+          <div class="form-card__item skeleton">
+            <div class="form-card__code"></div>
+            <div  class="form-card__row">
+              <div class="form-card__name"></div>
+            </div>
+            <div class="form-card__provider"></div>
+            <div class="form-card__description"></div>
+            <div class="form-card__row">
+              <button class="form-card__delete-button">Удалить</button>
+              <button class="form-card__edit-button">Редактировать</button>
+            </div>
+          </div>
+          <div class="form-card__item skeleton">
+            <div class="form-card__code"></div>
+            <div  class="form-card__row">
+              <div class="form-card__name"></div>
+            </div>
+            <div class="form-card__provider"></div>
+            <div class="form-card__description"></div>
+            <div class="form-card__row">
+              <button class="form-card__delete-button">Удалить</button>
+              <button class="form-card__edit-button">Редактировать</button>
+            </div>
+          </div>
+          <span id="absolute-loader" class="loader loader__invisible"></span>
         </div>
       </div>
     </div>
