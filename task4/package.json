@@ -12,6 +12,7 @@
     "prettier:check": "prettier -c ."
   },
   "dependencies": {
+    "json-server": "^0.17.4",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {

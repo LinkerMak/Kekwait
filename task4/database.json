@@ -1,0 +1,40 @@
+{
+    "products": [
+      {
+        "name": "Крутой Картошка",
+        "link": "https://beresta.by/wp-content/uploads/2016/08/DSCF0853-1.jpg",
+        "description": "Сладкий",
+        "code": "228322",
+        "provider": "Что Картошка",
+        "id": 1
+      },
+      {
+        "id": 2,
+        "name": "Кайфовый Огурчик",
+        "link": "https://sun6-21.userapi.com/s/v1/ig1/s29U8A2YwL6qTU_1NBr5mqynUAoMBb20OZ19vIgdXeMk1kenZ9M-CrxWnxVlM4kn9l8-wn86.jpg?size=1077x1077&quality=96&crop=1,421,1077,1077&ava=1",
+        "description": "Свежий",
+        "code": "228323",
+        "provider": "Где Огурец"
+      },
+      {
+        "id": 3,
+        "name": "Веселый Кабачок",
+        "link": "https://kartinkof.club/uploads/posts/2022-04/1649996837_19-kartinkof-club-p-kabachki-kartinki-prikolnie-20.jpg",
+        "description": "Большой и толстый с женой",
+        "code": "123456",
+        "provider": "Когда Кабачок"
+      },
+      {
+        "id": 4,
+        "name": "Сеньор Помидор",
+        "link": "https://gas-kvas.com/uploads/posts/2023-01/1673510827_gas-kvas-com-p-senor-pomidor-detskie-risunki-31.jpg",
+        "description": "Важный",
+        "code": "000001",
+        "provider": "? Помидор"
+      }
+    ],
+    "user-profile": {
+      "name": "Макар Линкер",
+      "group": 6409
+    }
+  }

@@ -6,7 +6,6 @@
 
 Есть возможность редактировать карточку товара через форму или удалить её.!(после нажатия на кнопку редактировать)[img3.png](img3.png)
 
-1. git clone
-2. npm i
-3. npm run build
-4. npm run dev
+Для запуска сервера необходимо выполнить следующие команды:
+    1) npm install -g json-server
+    2) json-server --watch database.json

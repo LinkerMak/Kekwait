@@ -5,6 +5,53 @@
   height: 100vh;
 }
 
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  top:  50%;
+  left: 50%;
+  display: block;
+  position: absolute;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+
+  &__invisible{
+    display: none;
+  }
+}
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-bottom: 4px solid #FF3D00;
+  border-left: 4px solid transparent;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .form{
   border-style: groove;
   border-bottom: none;
@@ -17,6 +64,7 @@
 
   &__input-text{
     margin: 20px;
+    border-radius: 15px;
     padding: 10px;
     border-style: none;
     background-color: #ddd7d7;
@@ -48,6 +96,7 @@
 
   &__input-description{
     margin: 20px;
+    border-radius: 15px;
     padding: 10px;
     min-width: 40%;
     border-style: none;
@@ -55,10 +104,11 @@
   }
 
   &__create-button{
+    border-radius: 20px;
     padding: 10px;
     align-self: center;
     width: 150px;
-    background-color: #97cd5a;
+    background-color: #2e68cf;
     color: white;
   }
 
@@ -115,20 +165,26 @@
   }
 
   &__edit-button{
+    border-radius: 20px;
     padding: 10px;
     align-self: center;
     width: 100px;
-    background-color: #228b22;
+    background-color: #1e9500;
     color: white;
     font-size: 11px;
     text-align: center;
   }
 
+  &__invisible{
+    display: none;
+  }
+
   &__delete-button{
+    border-radius: 20px;
     padding: 10px;
     align-self: center;
     width: 100px;
-    background-color: #b22222;
+    background-color: #a5052a;
     color: white;
     font-size: 11px;
     text-align: center;
