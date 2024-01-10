@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://acdn.tinkoff.ru/params/common_front/resourses/icons/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тинькофф Образование</title>
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__text">Линкер Макар 6409</p>
+      <button id="setup-cards" class="header__button" type="button">Инициализировать первоначальные значения</button>
+    </header>
+    <div class="block">
+      <form id="input-form" class="form">
+        <div class="form__input-form">
+          <input data-required="true" data-max-length="300" id="input-name" class="form__input-text" name="name" type="text" placeholder="Имя" required></input>
+        </div>
+        <div class="form__input-form">
+          <input data-required="true" data-max-length="300" id="input-link" class="form__input-text" name="link" type="text" placeholder="Ссылка на изображение" required></input>
+        </div>
+        <div class="form__input-form">
+          <textarea data-required="true" data-max-length="300" id="input-desc" class="form__input-description" name="description" cols="40" rows="5" placeholder="Описание"></textarea>
+        </div>
+        <div class="form__input-form">
+          <input data-required="true" data-max-length="300" id="input-code" class="form__input-text" name="code" type="code" placeholder="Код товара" required></input>
+        </div>
+        <div class="form__input-form">
+          <input data-required="true" data-max-length="300" id="input-provider" class="form__input-text" name="provider" type="provider" placeholder="Поставщик" required></input>
+        </div>
+        <div class="form__row">
+          <button class="form__create-button" type="button" id="create-card">Добавить</button>
+        </div>
+      </form>
+      <div class="form-card">
+        <div class="form-card__list_item">
+
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

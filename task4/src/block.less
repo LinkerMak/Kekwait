@@ -1,0 +1,136 @@
+.block{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form{
+  border-style: groove;
+  border-bottom: none;
+  border-left: none;
+  border-top:none;
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+  justify-content: start;
+
+  &__input-text{
+    margin: 20px;
+    padding: 10px;
+    border-style: none;
+    background-color: #ddd7d7;
+    text-align: start;
+  }
+
+  &__input-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__error-label{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: red;
+  }
+
+  &__error{
+    border-color: red;
+  }
+
+  &__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__input-description{
+    margin: 20px;
+    padding: 10px;
+    min-width: 40%;
+    border-style: none;
+    background-color: #ddd7d7;
+  }
+
+  &__create-button{
+    padding: 10px;
+    align-self: center;
+    width: 150px;
+    background-color: #97cd5a;
+    color: white;
+  }
+
+  &__inactive-button{
+    display: none;
+  }
+}
+
+.form-card{
+  padding: 20px;
+
+  &__list_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__item{
+    width: 225px;
+    flex-direction: column;
+    border-style: groove;
+    display: flex;
+    margin: 15px;
+    padding: 10px;
+
+  }
+
+  &__code{
+    padding: 10px;
+  }
+
+  &__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__name{
+    text-align: center;
+
+  }
+
+  &__img{
+    height: 100px;
+    width: 100px
+  }
+
+  &__provider{
+    margin: 5px;
+  }
+
+  &__description{
+    margin: 5px;
+  }
+
+  &__edit-button{
+    padding: 10px;
+    align-self: center;
+    width: 100px;
+    background-color: #228b22;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  &__delete-button{
+    padding: 10px;
+    align-self: center;
+    width: 100px;
+    background-color: #b22222;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+  }
+}
